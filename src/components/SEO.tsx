@@ -5,9 +5,9 @@ interface SEOProps {
   description?: string;
 }
 
-const defaultTitle = "Build Match Pro | Trusted Mountain West Subcontractors";
+const defaultTitle = "Build Match Pro | Trusted Utah Subcontractors";
 const defaultDescription =
-  "Find reliable, vetted subcontractors across the Mountain West. Quality-first pros without bloated marketing costs.";
+  "Find reliable, vetted subcontractors across Utah. Quality-first pros without bloated marketing costs.";
 
 export function SEO({ title = defaultTitle, description = defaultDescription }: SEOProps) {
   useEffect(() => {
@@ -57,13 +57,7 @@ export function SEO({ title = defaultTitle, description = defaultDescription }: 
       url: window.location.origin + "/",
       description: description,
       areaServed: [
-        "Idaho",
-        "Montana",
-        "Wyoming",
-        "Utah",
-        "Colorado",
-        "Nevada",
-        "New Mexico"
+        "Utah"
       ],
     };
 

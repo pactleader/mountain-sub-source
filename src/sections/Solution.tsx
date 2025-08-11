@@ -18,9 +18,9 @@ const blocks = [
     alt: "Craftsperson focused on detailed work",
   },
   {
-    title: "Mountain West Experts",
+    title: "Utah Experts",
     copy:
-      "These pros know how to build in our region. They understand local rules, weather, and materials that work best here.",
+      "These pros know how to build in Utah. They understand local rules, weather, and materials that work best here.",
     image: mountainBuildImg,
     alt: "Construction with mountain landscape in the background",
   },

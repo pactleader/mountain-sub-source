@@ -12,21 +12,21 @@ const Hero = () => {
               Find Trusted Subcontractors Who Do Great Work
             </h1>
             <p className="text-lg text-muted-foreground">
-              We connect you with skilled pros in the Mountain West who care more
+              We connect you with skilled pros in Utah who care more
               about quality than selling.
             </p>
           </header>
           <div className="flex flex-wrap gap-2 mb-8">
             <Badge variant="secondary">Vetted Network</Badge>
             <Badge variant="secondary">On-Time Delivery</Badge>
-            <Badge variant="secondary">Mountain West Experts</Badge>
+            <Badge variant="secondary">Utah Experts</Badge>
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <a href="#contact">
               <Button size="lg" variant="hero">Find Your Next Subcontractor</Button>
             </a>
-            <a href="#contact" className="inline-flex">
-              <Button size="lg" variant="outline">Talk to Our Team</Button>
+            <a href="/apply" className="inline-flex">
+              <Button size="lg" variant="outline">Apply to be a Sub</Button>
             </a>
           </div>
         </div>

@@ -4,7 +4,7 @@ const benefits = [
   { icon: Clock, title: "Save Time", copy: "No more calling dozens of contractors" },
   { icon: PiggyBank, title: "Save Money", copy: "Fair prices without marketing markups" },
   { icon: Moon, title: "Sleep Better", copy: "Know your subs will show up and do good work" },
-  { icon: MapPin, title: "Local Knowledge", copy: "Pros who understand Mountain West building" },
+  { icon: MapPin, title: "Local Knowledge", copy: "Pros who understand Utah building" },
   { icon: BadgeCheck, title: "Proven Track Record", copy: "Only subs with great past work" },
   { icon: FileCheck2, title: "No Surprises", copy: "Clear communication from start to finish" },
 ];

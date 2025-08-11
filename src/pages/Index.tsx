@@ -8,6 +8,7 @@ import SocialProof from "@/sections/SocialProof";
 import RegionalFocus from "@/sections/RegionalFocus";
 import FinalCTA from "@/sections/FinalCTA";
 import Footer from "@/sections/Footer";
+import ContactForm from "@/sections/ContactForm";
 import { SEO } from "@/components/SEO";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
         <SocialProof />
         <RegionalFocus />
         <FinalCTA />
+        <ContactForm />
       </main>
       <Footer />
     </div>

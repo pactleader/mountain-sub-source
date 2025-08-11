@@ -13,14 +13,14 @@ const FinalCTA = () => {
         <p className="text-muted-foreground mb-6">Join hundreds of builders who never worry about finding good subs again.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" variant="hero">Get Started Now</Button>
-          <a href="#hero" className="inline-flex"><Button size="lg" variant="outline">Talk to Our Team</Button></a>
+          <a href="/apply" className="inline-flex"><Button size="lg" variant="outline">Apply to be a Sub</Button></a>
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
           <span>Free to get started</span>
           <span>•</span>
           <span>No long contracts</span>
           <span>•</span>
-          <span>Mountain West experts</span>
+          <span>Utah experts</span>
         </div>
       </div>
     </section>

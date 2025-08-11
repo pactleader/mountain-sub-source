@@ -6,20 +6,20 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 py-12 grid md:grid-cols-4 gap-8">
         <div>
           <h3 className="font-display text-xl font-semibold mb-3">Build Match Pro</h3>
-          <p className="text-sm text-muted-foreground">Reliability and craftsmanship for Mountain West builders.</p>
+          <p className="text-sm text-muted-foreground">Reliability and craftsmanship for Utah builders.</p>
         </div>
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@buildmatchpro.com</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> (555) 123-4567</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Mountain West, USA</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Utah, USA</li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold mb-2">Service Areas</h4>
           <ul className="grid grid-cols-2 gap-2 text-sm">
-            {['Idaho','Montana','Wyoming','Utah','Colorado','Nevada','New Mexico'].map(s => (
+            {['Salt Lake County','Utah County','Davis County','Weber County','Cache Valley','Summit County','Wasatch County','Washington County'].map(s => (
               <li key={s} className="bg-secondary rounded px-2 py-1">{s}</li>
             ))}
           </ul>
