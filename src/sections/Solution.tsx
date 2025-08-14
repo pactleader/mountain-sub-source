@@ -11,7 +11,7 @@ const blocks = [
     alt: "Subcontractor reviewing blueprints on a job site",
   },
   {
-    title: "They Focus on Work, Not Marketing",
+    title: "Worth Their Weight in Gold",
     copy:
       "Our subs spend time getting better at their job, not making ads. That means you get skilled workers who charge fair prices.",
     image: craftImg,
