@@ -13,7 +13,7 @@ const blocks = [
   {
     title: "Worth Their Weight in Gold",
     copy:
-      "Our subs spend time getting better at their job, not making ads. That means you get skilled workers who charge fair prices.",
+      "We all know those guys who have been around for a long time and simply know what they're doing. These guys don't overcharge and live by a code of trust and reliability.",
     image: craftImg,
     alt: "Craftsperson focused on detailed work",
   },
