@@ -3,8 +3,8 @@ import { FileText, Search, Handshake, CheckCircle2 } from "lucide-react";
 const steps = [
   { icon: FileText, title: "Tell Us What You Need", copy: "Share your project details and timeline" },
   { icon: Search, title: "We Find the Right Match", copy: "We pick subs who are perfect for your job" },
-  { icon: Handshake, title: "Meet and Decide", copy: "Talk with them and see if they're a good fit" },
-  { icon: CheckCircle2, title: "Get Your Project Done", copy: "Watch your project finish on time and on budget" },
+  { icon: Handshake, title: "Receive Your Estimates", copy: "Our top subcontractors will draft estimates and send them to you" },
+  { icon: CheckCircle2, title: "Choose Your Favorite Contractor", copy: "Watch your project finish on time and on budget" },
 ];
 
 const HowItWorks = () => {
