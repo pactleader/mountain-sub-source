@@ -4,23 +4,23 @@ import mountainBuildImg from "@/assets/solution-mountain-construction.jpg";
 
 const blocks = [
   {
-    title: "We Check Everyone",
+    title: "We vet our subs",
     copy:
-      "Every person in our network gets checked. We look at their past work. We talk to people they worked with before. Only the best ones join our team.",
+      "Everyone in our network gets checked we look at their past work. We talk to people about the work They work with before only the best ones are added to our network.",
     image: blueprintImg,
     alt: "Subcontractor reviewing blueprints on a job site",
   },
   {
-    title: "Worth Their Weight in Gold",
+    title: "That Old School Work Ethic",
     copy:
-      "We all know those guys who have been around for a long time and simply know what they're doing. These guys don't overcharge and live by a code of trust and reliability.",
+      "We all know those guys who have been around for a long time and simply know what they are doing. These guys don't overcharge and live by a code of trust and reliability. They just want to do good, honest work.",
     image: craftImg,
     alt: "Craftsperson focused on detailed work",
   },
   {
-    title: "Utah Experts",
+    title: "...experienced and local",
     copy:
-      "These pros know how to build in Utah. They understand local rules, weather, and materials that work best here.",
+      "The pros know how to build in Utah. They understand local rules, weather, and materials that work best. They have connections and teams that allow them to get the job done right and on time.",
     image: mountainBuildImg,
     alt: "Construction with mountain landscape in the background",
   },
