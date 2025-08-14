@@ -17,7 +17,7 @@ const items = [
     icon: Handshake,
     title: "Hard to Know Who to Trust",
     copy:
-      "Online reviews can be fake. References might not be real. How do you know if they'll do good work?",
+      "The contractors with the most reviews usually just have the biggest marketing budgets, not the best work.",
   },
 ];
 
