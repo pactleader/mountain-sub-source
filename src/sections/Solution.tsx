@@ -1,6 +1,6 @@
 import blueprintImg from "@/assets/solution-blueprints.jpg";
-import craftImg from "@/assets/solution-craft.jpg";
-import mountainBuildImg from "@/assets/solution-mountain-construction.jpg";
+import framingImg from "@/assets/solution-framing.jpg";
+import winterSidingImg from "@/assets/solution-winter-siding.jpg";
 
 const blocks = [
   {
@@ -14,15 +14,15 @@ const blocks = [
     title: "That Old School Work Ethic",
     copy:
       "We all know those guys who have been around for a long time and simply know what they are doing. These guys don't overcharge and live by a code of trust and reliability. They just want to do good, honest work.",
-    image: craftImg,
-    alt: "Craftsperson focused on detailed work",
+    image: framingImg,
+    alt: "Team of men framing an apartment complex",
   },
   {
     title: "...experienced and local",
     copy:
       "The pros know how to build in Utah. They understand local rules, weather, and materials that work best. They have connections and teams that allow them to get the job done right and on time.",
-    image: mountainBuildImg,
-    alt: "Construction with mountain landscape in the background",
+    image: winterSidingImg,
+    alt: "Team adding siding to a house with snow on the ground",
   },
 ];
 

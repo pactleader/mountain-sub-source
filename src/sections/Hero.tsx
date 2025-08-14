@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/hero-roofers.jpg";
 const Hero = () => {
   return <section id="hero" className="relative">
       <div className="mx-auto max-w-7xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         <div className="relative group">
           <div className="rounded-xl overflow-hidden shadow-xl">
-            <img src={heroImage} alt="Construction crew collaborating on site with mountain backdrop" className="w-full h-auto object-cover" />
+            <img src={heroImage} alt="Team of roofers working hard on a large roof, shingling asphalt shingles" className="w-full h-auto object-cover" />
           </div>
         </div>
       </div>
