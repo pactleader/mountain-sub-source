@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# Build Match Pro - Contact Form API Integration
 
-## Project info
+This project uses a REST API endpoint for handling contact form submissions.
 
-**URL**: https://lovable.dev/projects/2cd40a0d-5586-44ce-b8fc-bae2a153ad17
+## API Configuration
 
-## How can I edit this code?
+**API Endpoint:** `https://pacificpact.com/buildmatchpro-mail/contact.php`
 
-There are several ways of editing your application.
+The contact form sends all form data to this endpoint, which handles:
+- Form validation
+- Email sending via PHPMailer
+- SMTP configuration (PrivateEmail/Namecheap)
+- CORS handling
 
-**Use Lovable**
+## Contact Form Fields
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2cd40a0d-5586-44ce-b8fc-bae2a153ad17) and start prompting.
+The form collects the following data:
+- **Required:** name, email, message
+- **Optional:** phone, business, estimatedCost, projectType, services
 
-Changes made via Lovable will be committed automatically to this repo.
+## API Response Format
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+**Success:**
+```json
+{
+  "success": true,
+  "message": "Message sent successfully"
+}
 ```
 
-**Edit a file directly in GitHub**
+**Error:**
+```json
+{
+  "success": false,
+  "message": "Error description"
+}
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Testing
 
-**Use GitHub Codespaces**
+Use the `ApiTest` component to test the API connection and email sending functionality.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## SMTP Configuration
 
-## What technologies are used for this project?
+The API uses PrivateEmail (Namecheap) SMTP:
+- **Host:** mail.privateemail.com
+- **Port:** 465 (SSL/TLS)
+- **Username:** hello@buildmatchpro.com
+- **Password:** Bu1ld@MatcH_Pr0!
 
-This project is built with:
+## CORS Settings
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2cd40a0d-5586-44ce-b8fc-bae2a153ad17) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The API allows requests from:
+- https://buildmatchpro.com (production)
+- Development localhost URLs
