@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 
 interface ApplyValues {
   name: string;
@@ -18,10 +19,52 @@ interface ApplyValues {
 const Apply = () => {
   const form = useForm<ApplyValues>();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = (data: ApplyValues) => {
-    console.log("Apply form submitted:", data);
-    toast({ title: "Application received", description: "We’ll review your info and follow up soon." });
+  const onSubmit = async (data: ApplyValues) => {
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://pacificpact.com/buildmatchpro-mail/apply.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          years: data.years || '',
+          serviceAreas: data.serviceAreas || '',
+          teamSize: data.teamSize || '',
+          website: data.website || '',
+          reviews: data.reviews || ''
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({ 
+          title: "Application sent successfully!", 
+          description: "We'll review your info and follow up soon." 
+        });
+        form.reset();
+      } else {
+        toast({ 
+          title: "Error sending application", 
+          description: result.message || "Please try again later.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting application:', error);
+      toast({ 
+        title: "Network error", 
+        description: "Please check your connection and try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -125,7 +168,14 @@ const Apply = () => {
             </div>
 
             <div className="flex gap-3">
-              <Button type="submit" size="lg" variant="hero">Submit Application</Button>
+              <Button 
+                type="submit" 
+                size="lg" 
+                variant="hero" 
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Submit Application"}
+              </Button>
               <a href="/" className="inline-flex items-center">Back to Home</a>
             </div>
           </form>
